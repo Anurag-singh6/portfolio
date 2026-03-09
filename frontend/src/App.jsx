@@ -1,38 +1,29 @@
 import React from "react";
-import { IoLogoGithub } from "react-icons/io";
-import { FaLinkedin } from "react-icons/fa";
+import Header from "./components/Header";
 
 const App = () => {
   return (
     <>
-      <nav className="border flex justify-between">
-        <div className="p-5 bg-white">
-          <h3 className="text-2xl font-bold">Anurag Singh</h3>
+      <Header />
+      <section className="">
+        <div className="p-5">
+          <p className="text-xl text-(--color-text-light)">Hello, my name is</p>
         </div>
-        <div className="p-5 flex items-center gap-5">
-          <ul className="flex gap-4">
-            <li className="text-gray-700 font-semibold hover:text-blue-600 cursor-pointer">
-              Home
-            </li>
-            <li className="text-gray-700 font-semibold hover:text-blue-600 cursor-pointer">
-              Skill
-            </li>
-            <li className="text-gray-700 font-semibold hover:text-blue-600 cursor-pointer">
-              Projects
-            </li>
-            <li className="text-gray-700 font-semibold hover:text-blue-600 cursor-pointer">
-              Education
-            </li>
-            <li className="text-gray-700 font-semibold hover:text-blue-600 cursor-pointer">
-              Contact
-            </li>
-          </ul>
-          <div className="flex gap-2">
-            <IoLogoGithub className="text-xl hover:text-blue-600 cursor-pointer"/>
-            <FaLinkedin className="text-xl hover:text-blue-600 cursor-pointer"/>
-          </div>
+        <div className="p-5">
+          <h1 className="text-5xl font-bold text-(--color-text-main)">Anurag Singh</h1>
         </div>
-      </nav>
+        <div className="p-5 w-120">
+          <p className="text-base text-(--color-text-light)">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim alias
+            velit minima asperiores veritatis architecto expedita, officiis cum
+            obcaecati aliquid aut quaerat commodi dolores voluptatum voluptatem
+            voluptates optio nulla itaque!
+          </p>
+        </div>
+        <div className="p-5">
+          <button className="bg-(--color-accent) rounded-xl p-2 text-white font-semibold hover:bg-(--color-accent-hover) cursor-pointer">View Projects</button>
+        </div>
+      </section>
     </>
   );
 };
