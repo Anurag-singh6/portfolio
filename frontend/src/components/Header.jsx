@@ -6,8 +6,8 @@ const Header = () => {
   return (
     <>
       <nav className="bg-white shadow-sm flex justify-between">
-        <div className="p-5">
-          <h3 className="text-2xl font-bold">Anurag Singh</h3>
+        <div className="p-5 ml-5">
+          <h3 className="text-2xl font-bold">Anurag</h3>
         </div>
         <div className="p-5 flex items-center gap-5">
           <ul className="flex gap-4">
