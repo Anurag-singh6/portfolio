@@ -4,7 +4,7 @@ import linked from "../assets/linked.jpg";
 const Hero = () => {
   return (
     <>
-      <section className="bg-gray-50 flex justify-between align-center">
+      <section className="bg-gray-50 h-150 flex justify-between align-center">
         <div className="ml-5">
           <div className="p-5">
             <p className=" text-gray-600 text-md mb-2">Hello, my name is</p>
@@ -19,10 +19,10 @@ const Hero = () => {
             </p>
           </div>
           <div className="p-5 flex gap-4">
-            <button className="text-white font-semibold w-40 bg-blue-500 p-3 rounded-xl shadow-md hover:shadow-lg hover:bg-blue-700 cursor-pointer">
+            <button className="text-white font-semibold w-40 bg-blue-500 p-3 rounded-xl shadow-md hover:shadow-lg transition ease-in-out hover:bg-blue-700 cursor-pointer">
               View Projects
             </button>
-            <button className="text-amber-600 font-semibold w-40 bg-white p-3 border-2 border-amber-400 rounded-xl shadow-md hover:shadow-lg hover:bg-amber-100 cursor-pointer">
+            <button className="text-red-600 font-semibold w-40 bg-white p-3 border-2 border-red-400 rounded-xl shadow-md hover:shadow-lg transition ease-in-out hover:bg-red-100 cursor-pointer">
               Get In Touch
             </button>
           </div>
