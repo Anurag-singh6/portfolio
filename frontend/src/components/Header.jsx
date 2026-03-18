@@ -28,7 +28,7 @@ const Header = () => {
             </li>
           </ul>
           <div className="border-l-2 border-gray-400 px-1 flex gap-2">
-            <IoLogoGithub className="text-xl hover:text-blue-600 cursor-pointer" />
+            <IoLogoGithub className="ml-2 text-xl hover:text-blue-600 cursor-pointer" />
             <FaLinkedin className="text-xl hover:text-blue-600 cursor-pointer" />
           </div>
         </div>
