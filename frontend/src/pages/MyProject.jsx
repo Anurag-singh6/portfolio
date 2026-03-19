@@ -9,12 +9,12 @@ import steg from "../assets/steg.png";
 const MyProject = () => {
   return (
     <>
-      <section className="bg-gradient-to-b from-gray-100 via-gray-50 to-white mb-10">
+      <section className="bg-linear-to-b from-gray-100 via-gray-50 to-white mb-10">
         <div className="p-5 ml-5 flex items-center">
           <h1 className="text-4xl mt-15 font-bold text-blue-700">
             My Projects
           </h1>
-          <div className="h-0.5 w-250 mt-15 ml-2.5 bg-gradient-to-r from-amber-500 via-amber-300 to-gray-100 rounded"></div>
+          <div className="h-0.5 w-250 mt-15 ml-2.5 bg-linear-to-r from-amber-500 via-amber-300 to-gray-100 rounded"></div>
         </div>
         <div className="p-5 ml-5 mr-5 grid grid-cols-1">
           <div className="border-2 border-blue-300 rounded-2xl transition ease-in hover:shadow-xl flex items-center gap-18">
