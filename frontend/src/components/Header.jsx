@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 const Header = () => {
   return (
     <>
-      <nav className="bg-white shadow-sm sticky top-0 flex justify-between">
+      <nav className="bg-white shadow-sm sticky top-0 z-10 flex justify-between">
         <div className="p-5 ml-5">
           <h3 className="text-2xl font-bold">Anurag</h3>
         </div>

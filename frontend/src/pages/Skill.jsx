@@ -13,6 +13,7 @@ import { IoLogoGithub } from "react-icons/io";
 import { FaJava } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import c from "../assets/c.png";
+import { FaPython } from "react-icons/fa";
 
 const Skill = () => {
   return (
@@ -80,6 +81,10 @@ const Skill = () => {
           <div className="bg-white w-28 p-6 rounded-full border-2 border-gray-100 hover:border-amber-400 transition hover:shadow-lg hover:scale-105 flex flex-col items-center">
             <img src={c} alt="c" className="w-10 h-10" />
             <span className="text-md font-semibold">C++</span>
+          </div>
+          <div className="bg-white w-28 p-6 rounded-full border-2 border-gray-100 hover:border-amber-400 transition hover:shadow-lg hover:scale-105 flex flex-col items-center">
+            <FaPython className="w-10 h-10 text-yellow-300" />
+            <span className="text-md font-semibold">Python</span>
           </div>
         </div>
       </section>
