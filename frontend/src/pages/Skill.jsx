@@ -18,7 +18,7 @@ import { FaPython } from "react-icons/fa";
 const Skill = () => {
   return (
     <>
-      <section className="mt-15 mb-15">
+      <section className="mt-15 mb-15" id="skill">
         <div className="p-5 ml-5 flex items-center">
           <h1 className="text-4xl font-bold text-blue-700">
             Teachnical Skills

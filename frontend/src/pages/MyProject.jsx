@@ -5,11 +5,38 @@ import jokeapp from "../assets/jokeapp.png";
 import converter from "../assets/coverter.png";
 import imageedit from "../assets/imageedit.png";
 import steg from "../assets/steg.png";
+import ViewDetails from "./ViewDetails";
 
 const MyProject = () => {
+
+  const openGithubFood = () => {
+    window.open(
+      "https://github.com/Anurag-singh6/anurag_webdevelopment_ricr/tree/main/cravenings",
+      "_blank"
+    );
+  };
+  const openGithubChat = () => {
+    window.open("https://github.com/Anurag-singh6/chatapp/tree/main", "_blank");
+  };
+  const openGithubJokeapp = () => {
+    window.open("https://github.com/Anurag-singh6/anurag_webdevelopment_ricr/tree/main/javascript/joke_app_hindi", "_blank");
+  };
+  const openGithubCurrencyConverter = () => {
+    window.open("https://github.com/Anurag-singh6/anurag_webdevelopment_ricr/tree/main/React/currencyconverter", "_blank");
+  }
+  const openGithubImage = () => {
+    window.open("https://github.com/Anurag-singh6/anurag_webdevelopment_ricr/tree/main/javascript/imageeditor", "_blank")
+  }
+  const openGithubstegano = () => {
+    window.open("https://github.com/Anurag-singh6/steganography-tool", "_blank");
+  }
+
   return (
     <>
-      <section className="bg-linear-to-b from-gray-100 via-gray-50 to-white mb-10">
+      <section
+        className="bg-linear-to-b from-gray-100 via-gray-50 to-white mb-10"
+        id="project"
+      >
         <div className="p-5 ml-5 flex items-center">
           <h1 className="text-4xl mt-15 font-bold text-blue-700">
             My Projects
@@ -54,11 +81,18 @@ const MyProject = () => {
                 </div>
               </div>
               <div className="mt-5 mb-10 flex gap-4">
-                <button className="border-2 border-blue-500 bg-transparent px-6 py-3 rounded-lg text-blue-600 font-semibold transition ease-in-out hover:bg-blue-500 hover:text-white">
+                <button
+                  className="border-2 border-blue-500 bg-transparent px-6 py-3 rounded-lg text-blue-600 font-semibold transition ease-in-out hover:bg-blue-500 hover:text-white"
+                  onClick={openGithubFood}
+                >
                   View Code →
                 </button>
-                <button className="px-6 py-3 rounded-lg bg-amber-500 text-white font-semibold transition ease-in-out hover:bg-amber-600">
-                  View Details
+
+                <button
+                  className="px-6 py-3 rounded-lg bg-amber-500 text-white font-semibold transition ease-in-out hover:bg-amber-600"
+
+                >
+                  View Project
                 </button>
               </div>
             </div>
@@ -99,11 +133,11 @@ const MyProject = () => {
                 </div>
               </div>
               <div className="mt-5 mb-10 flex gap-4">
-                <button className="border-2 border-blue-500 bg-transparent px-6 py-3 rounded-lg text-blue-600 font-semibold transition ease-in-out hover:bg-blue-500 hover:text-white">
+                <button className="border-2 border-blue-500 bg-transparent px-6 py-3 rounded-lg text-blue-600 font-semibold transition ease-in-out hover:bg-blue-500 hover:text-white" onClick={openGithubChat}>
                   View Code →
                 </button>
                 <button className="px-6 py-3 rounded-lg bg-amber-500 text-white font-semibold transition ease-in-out hover:bg-amber-600">
-                  View Details
+                  View Project
                 </button>
               </div>
             </div>
@@ -141,11 +175,11 @@ const MyProject = () => {
                 </div>
               </div>
               <div className="mt-5 mb-10 flex gap-4">
-                <button className="border-2 border-blue-500 bg-transparent px-6 py-3 rounded-lg text-blue-600 font-semibold transition ease-in-out hover:bg-blue-500 hover:text-white">
+                <button className="border-2 border-blue-500 bg-transparent px-6 py-3 rounded-lg text-blue-600 font-semibold transition ease-in-out hover:bg-blue-500 hover:text-white" onClick={openGithubJokeapp}>
                   View Code →
                 </button>
                 <button className="px-6 py-3 rounded-lg bg-amber-500 text-white font-semibold transition ease-in-out hover:bg-amber-600">
-                  View Details
+                  View Project
                 </button>
               </div>
             </div>
@@ -185,11 +219,11 @@ const MyProject = () => {
                 </div>
               </div>
               <div className="mt-5 mb-10 flex gap-4">
-                <button className="border-2 border-blue-500 bg-transparent px-6 py-3 rounded-lg text-blue-600 font-semibold transition ease-in-out hover:bg-blue-500 hover:text-white">
+                <button className="border-2 border-blue-500 bg-transparent px-6 py-3 rounded-lg text-blue-600 font-semibold transition ease-in-out hover:bg-blue-500 hover:text-white" onClick={openGithubCurrencyConverter}>
                   View Code →
                 </button>
                 <button className="px-6 py-3 rounded-lg bg-amber-500 text-white font-semibold transition ease-in-out hover:bg-amber-600">
-                  View Details
+                  View Project
                 </button>
               </div>
             </div>
@@ -231,11 +265,11 @@ const MyProject = () => {
                 </div>
               </div>
               <div className="mt-5 mb-10 flex gap-4">
-                <button className="border-2 border-blue-500 bg-transparent px-6 py-3 rounded-lg text-blue-600 font-semibold transition ease-in-out hover:bg-blue-500 hover:text-white">
+                <button className="border-2 border-blue-500 bg-transparent px-6 py-3 rounded-lg text-blue-600 font-semibold transition ease-in-out hover:bg-blue-500 hover:text-white" onClick={openGithubImage}>
                   View Code →
                 </button>
                 <button className="px-6 py-3 rounded-lg bg-amber-500 text-white font-semibold transition ease-in-out hover:bg-amber-600">
-                  View Details
+                  View Project
                 </button>
               </div>
             </div>
@@ -279,11 +313,11 @@ const MyProject = () => {
                 </div>
               </div>
               <div className="mt-5 mb-10 flex gap-4">
-                <button className="border-2 border-blue-500 bg-transparent px-6 py-3 rounded-lg text-blue-600 font-semibold transition ease-in-out hover:bg-blue-500 hover:text-white">
+                <button className="border-2 border-blue-500 bg-transparent px-6 py-3 rounded-lg text-blue-600 font-semibold transition ease-in-out hover:bg-blue-500 hover:text-white" onClick={openGithubstegano}>
                   View Code →
                 </button>
                 <button className="px-6 py-3 rounded-lg bg-amber-500 text-white font-semibold transition ease-in-out hover:bg-amber-600">
-                  View Details
+                  View Project
                 </button>
               </div>
             </div>
