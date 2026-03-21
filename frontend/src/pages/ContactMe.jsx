@@ -47,7 +47,7 @@ const ContactMe = () => {
               ></textarea>
             </div>
             <div className="px-3 py-2 ml-5 mr-5 mb-5 flex justify-center">
-              <button className="px-4 py-3 rounded w-full text-lg bg-black text-white font-semibold cursor-pointer transition delay-150 ease-in hover:bg-gray-800">
+              <button className="px-4 py-3 rounded w-full text-lg bg-black text-white font-semibold cursor-pointer shadow-md transition delay-150 ease-in-out hover:bg-gray-900">
                 Submit
               </button>
             </div>
