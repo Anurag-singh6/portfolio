@@ -26,7 +26,8 @@ const EducationSec = () => {
             </span>
             <p className="text-md font-semibold">
               Makhanlal Chaturvedi National University of Journalism and Mass
-              Communication, Bhopal
+              Communication, Bhopal |<i> CGPA: </i>
+              <b>7.23</b>
             </p>
           </div>
           <div className="px-7 py-7 border-2 border-blue-300 transition ease-in-out delay-75 hover:border-amber-400 hover:shadow-md rounded-xl">
@@ -37,7 +38,8 @@ const EducationSec = () => {
               2020 - 2021
             </span>
             <p className="text-md font-semibold">
-              Model Higher Secondary School, Bhopal
+              (MPBSE) | Model Higher Secondary School, Bhopal |<i> Percentage: </i>
+              <b>83%</b>
             </p>
           </div>
           <div className="px-7 py-7 border-2 border-blue-300 transition ease-in-out delay-75 hover:border-amber-400 hover:shadow-md rounded-xl">
@@ -48,7 +50,8 @@ const EducationSec = () => {
               2018 - 2019
             </span>
             <p className="text-md font-semibold">
-              Model Higher Secondary School, Bhopal
+              (MPBSE) | Model Higher Secondary School, Bhopal |<i> Percentage: </i>
+              <b>82%</b>
             </p>
           </div>
         </div>
