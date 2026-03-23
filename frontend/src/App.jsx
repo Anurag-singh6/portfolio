@@ -6,6 +6,7 @@ import MyProject from "./pages/MyProject";
 import EducationSec from "./pages/EducationSec";
 import ContactMe from "./pages/ContactMe";
 import Footer from "./components/Footer";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Skill />
       <MyProject />
       <EducationSec />
+      <Toaster/>
       <ContactMe />
       <Footer/>
     </>

@@ -48,6 +48,7 @@ const Hero = () => {
             src={linked}
             alt="profile"
             className="w-100 h-130 border-3 border-gray-300 rounded-xl object-cover shadow-2xl"
+            loading="lazy"
           />
         </div>
       </section>
