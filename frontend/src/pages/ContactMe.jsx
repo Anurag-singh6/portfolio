@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
-import api from "../config/Api"
+import api from "../config/Api";
 
 const ContactMe = () => {
   const [formData, setformData] = useState({
@@ -16,7 +16,7 @@ const ContactMe = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setformData((prev) => ({ ...prev, [name]: value }));
-  }
+  };
 
   const handleClearForm = () => {
     setformData({
@@ -24,8 +24,8 @@ const ContactMe = () => {
       email: "",
       mobileno: "",
       message: "",
-    })
-  }
+    });
+  };
 
   const validate = () => {
     let Error = {};
@@ -51,7 +51,7 @@ const ContactMe = () => {
     setValidationError(Error);
 
     return Object.keys(Error).length > 0 ? false : true;
-  }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -59,8 +59,8 @@ const ContactMe = () => {
 
     if (!validate()) {
       setIsLoading(false);
-      toast.error("Fill the contact form correctly")
-      return
+      toast.error("Fill the contact form correctly");
+      return;
     }
 
     try {
@@ -69,26 +69,35 @@ const ContactMe = () => {
       handleClearForm();
     } catch (error) {
       console.log(error);
-      toast.error(error.response?.data?.message || error.message || "Something went wrong");
+      toast.error(
+        error.response?.data?.message || error.message || "Something went wrong"
+      );
     } finally {
-      setIsLoading(false)
+      setIsLoading(false);
     }
-  }
+  };
   return (
     <>
-      <div className="mt-15 bg-white flex items-center justify-center" id="contact">
-        <div className="border-2 border-gray-400 rounded-2xl w-150 shadow-lg">
-          <form className="space-y-3" onSubmit={handleSubmit} onReset={handleClearForm}>
-            <div className="px-3 py-2">
-              <h1 className="text-blue-700 font-bold text-4xl text-center">
-                Contact
-              </h1>
-            </div>
-            <div className="px-3 py-2 ml-5 mr-5">
-              <label htmlFor="fullname" className="font-semibold text-lg">
+      <div
+        className="mt-10 px-4 sm:px-6 md:px-10 flex items-center justify-center bg-white"
+        id="contact"
+      >
+        <div className="w-full max-w-xl border border-gray-300 rounded-2xl shadow-lg">
+          <form
+            className="space-y-4 p-5 sm:p-6"
+            onSubmit={handleSubmit}
+            onReset={handleClearForm}
+          >
+            {/* HEADING */}
+            <h1 className="text-blue-700 font-bold text-2xl sm:text-3xl md:text-4xl text-center">
+              Contact
+            </h1>
+
+            {/* FULL NAME */}
+            <div>
+              <label className="font-semibold text-sm sm:text-base">
                 Full Name
               </label>
-              <br />
               <input
                 type="text"
                 name="fullname"
@@ -96,8 +105,10 @@ const ContactMe = () => {
                 onChange={handleChange}
                 required
                 disabled={isLoading}
-                className="border border-gray-300 px-4 py-2 w-full rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-500 transition duration-150 ease-in-out disabled:cursor-not-allowed disabled:bg-gray-200"
                 placeholder="Enter Your Full Name"
+                className="mt-1 border border-gray-300 px-4 py-2 w-full rounded shadow-sm 
+            focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-500 
+            transition disabled:bg-gray-200"
               />
               {validationError.fullname && (
                 <span className="text-xs text-red-500">
@@ -105,8 +116,10 @@ const ContactMe = () => {
                 </span>
               )}
             </div>
-            <div className="px-3 py-2 ml-5 mr-5">
-              <label htmlFor="email" className="font-semibold text-lg">
+
+            {/* EMAIL */}
+            <div>
+              <label className="font-semibold text-sm sm:text-base">
                 Email
               </label>
               <input
@@ -116,18 +129,22 @@ const ContactMe = () => {
                 onChange={handleChange}
                 required
                 disabled={isLoading}
-                className="border border-gray-300 px-4 py-2 w-full rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-500 transition duration-150 ease-in-out disabled:cursor-not-allowed disabled:bg-gray-200"
                 placeholder="Enter Your Email"
+                className="mt-1 border border-gray-300 px-4 py-2 w-full rounded shadow-sm 
+            focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-500 
+            transition disabled:bg-gray-200"
               />
-               {validationError.email && (
+              {validationError.email && (
                 <span className="text-xs text-red-500">
                   {validationError.email}
                 </span>
               )}
             </div>
-            <div className="px-3 py-2 ml-5 mr-5">
-              <label htmlFor="mobileno" className="font-semibold text-lg">
-                Mobile no.
+
+            {/* MOBILE */}
+            <div>
+              <label className="font-semibold text-sm sm:text-base">
+                Mobile No.
               </label>
               <input
                 type="number"
@@ -136,34 +153,46 @@ const ContactMe = () => {
                 onChange={handleChange}
                 required
                 disabled={isLoading}
-                className="border border-gray-300 px-4 py-2 w-full rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-500 transition duration-150 ease-in-out disabled:cursor-not-allowed disabled:bg-gray-200"
                 placeholder="Enter Your Mobile Number"
+                className="mt-1 border border-gray-300 px-4 py-2 w-full rounded shadow-sm 
+            focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-500 
+            transition disabled:bg-gray-200"
               />
-               {validationError.mobileno && (
+              {validationError.mobileno && (
                 <span className="text-xs text-red-500">
                   {validationError.mobileno}
                 </span>
               )}
             </div>
-            <div className="px-3 py-2 ml-5 mr-5">
-              <label htmlFor="message" className="font-semibold text-lg">
+
+            {/* MESSAGE */}
+            <div>
+              <label className="font-semibold text-sm sm:text-base">
                 Message
               </label>
-              <br />
               <textarea
                 name="message"
                 value={formData.message}
-                rows="5"
+                rows="4"
                 onChange={handleChange}
                 required
                 disabled={isLoading}
-                className="resize-none border border-gray-300 px-4 py-2 w-full rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-500 transition duration-150 ease-in-out disabled:cursor-not-allowed disabled:bg-gray-200"
                 placeholder="Type Your Message Here..."
+                className="mt-1 resize-none border border-gray-300 px-4 py-2 w-full rounded shadow-sm 
+            focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-500 
+            transition disabled:bg-gray-200"
               ></textarea>
             </div>
-            <div className="px-3 py-2 ml-5 mr-5 mb-5 flex justify-center">
-              <button type="submit" className="px-4 py-3 rounded w-full text-lg bg-black text-white font-semibold cursor-pointer shadow-md transition delay-150 ease-in-out hover:bg-gray-900" disabled={isLoading}>
-                {isLoading ? "Submitting" : "Submit"}
+
+            {/* BUTTON */}
+            <div>
+              <button
+                type="submit"
+                disabled={isLoading}
+                className="w-full px-4 py-3 rounded-lg text-base sm:text-lg bg-black text-white font-semibold 
+            shadow-md transition hover:bg-gray-900 disabled:bg-gray-400"
+              >
+                {isLoading ? "Submitting..." : "Submit"}
               </button>
             </div>
           </form>
