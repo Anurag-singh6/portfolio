@@ -27,7 +27,9 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <h3 className="text-2xl font-bold">Anurag</h3>
+            <h3 className="text-2xl sm:text-4xl md:text-2xl lg:text-3xl xl:text-2xl italic font-signature text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-600 drop-shadow-xl tracking-tight">
+              Anurag
+            </h3>
           </div>
 
           <div className="flex items-center md:hidden">
@@ -67,7 +69,11 @@ const Header = () => {
         </div>
       </div>
 
-      <div className={`${menuOpen ? "block" : "hidden"} md:hidden bg-white border-t border-gray-200`}>
+      <div
+        className={`${
+          menuOpen ? "block" : "hidden"
+        } md:hidden bg-white border-t border-gray-200`}
+      >
         <div className="px-2 pt-2 pb-3 space-y-1">
           {navLinks.map((link) => (
             <Link

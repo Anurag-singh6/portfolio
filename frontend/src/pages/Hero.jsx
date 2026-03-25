@@ -13,19 +13,22 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="bg-gray-50 min-h-screen flex flex-col md:flex-row items-center justify-between py-8 px-4 md:px-10 lg:px-16"
+        className="bg-gradient-to-l from-gray-100 via-gray-50 to-white min-h-screen flex flex-col md:flex-row items-center justify-between py-8 px-4 md:px-10 lg:px-16"
       >
         <div className="w-full md:w-1/2 mb-8 md:mb-0">
           <div className="px-2 md:px-0">
-            <p className="text-gray-600 text-base md:text-lg mb-2">Hello, my name is</p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">Anurag Singh</h1>
+            <p className="text-gray-600 text-base md:text-lg mb-2">
+              Hello, my name is
+            </p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+              Anurag Singh
+            </h1>
           </div>
           <div className="mt-6 px-2 md:px-0 max-w-xl">
             <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
-              alias velit minima asperiores veritatis architecto expedita,
-              officiis cum obcaecati aliquid aut quaerat commodi dolores
-              voluptatum voluptatem voluptates optio nulla itaque!
+              I am a Web Developer specializing in building
+              modern web applications. I create efficient, scalable solutions
+              using cutting-edge technologies and best practices.
             </p>
           </div>
           <div className="mt-6 px-2 md:px-0 flex flex-col sm:flex-row sm:items-center sm:gap-4 gap-3">
