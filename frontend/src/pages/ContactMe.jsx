@@ -190,7 +190,7 @@ const ContactMe = () => {
                 type="submit"
                 disabled={isLoading}
                 className="w-full px-4 py-3 rounded-lg text-base sm:text-lg bg-black text-white font-semibold 
-            shadow-md transition hover:bg-gray-900 disabled:bg-gray-400"
+            shadow-md cursor-pointer transition hover:bg-gray-900 disabled:bg-gray-400"
               >
                 {isLoading ? "Submitting..." : "Submit"}
               </button>
