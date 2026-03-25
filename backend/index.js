@@ -28,7 +28,7 @@ app.use((err, req, res, next) => {
   res.status(statusCode).json({ message: errorMessage });
 });
 
-const port = process.env.PORT || 4500;
+const port = process.env.PORT || 5000;
 app.listen(port, async () => {
   console.log("server started at port ", port);
   await connectdb();
