@@ -1,6 +1,5 @@
 import React from "react";
 import linked from "../assets/linked.jpg";
-import MyProject from "./MyProject";
 
 const Hero = () => {
   const scrollToProjects = () => {
