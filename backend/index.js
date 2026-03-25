@@ -9,7 +9,7 @@ import PublicRouter from "./src/routers/publicRouter.js";
 dotenv.config();
 
 const app = express();
-app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));
+app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 app.use(morgan("dev"));
@@ -28,7 +28,7 @@ app.use((err, req, res, next) => {
   res.status(statusCode).json({ message: errorMessage });
 });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 4500;
 app.listen(port, async () => {
   console.log("server started at port ", port);
   await connectdb();
