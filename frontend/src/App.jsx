@@ -12,13 +12,13 @@ const App = () => {
   return (
     <>
       <Header />
+      <Toaster />
       <Hero />
       <Skill />
       <MyProject />
       <EducationSec />
-      <Toaster/>
       <ContactMe />
-      <Footer/>
+      <Footer />
     </>
   );
 };
