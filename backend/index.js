@@ -2,16 +2,14 @@ import express from "express";
 import connectdb from "./src/config/db.js";
 import cors from "cors";
 import morgan from "morgan";
-import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
 import PublicRouter from "./src/routers/publicRouter.js";
 
 dotenv.config();
 
 const app = express();
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));
 app.use(express.json());
-app.use(cookieParser());
 app.use(morgan("dev"));
 
 app.use("/public", PublicRouter);
