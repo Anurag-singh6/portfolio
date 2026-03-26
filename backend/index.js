@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin: "https://anurag-portfolio-online.netlify.app/",
+    origin: "https://anurag-portfolio-online.netlify.app",
     credentials: true,
   })
 );
@@ -31,7 +31,7 @@ app.use((err, req, res, next) => {
   res.status(statusCode).json({ message: errorMessage });
 });
 
-const port = process.env.PORT || 4500;
+const port = process.env.PORT;
 app.listen(port, async () => {
   console.log("server started at port ", port);
   await connectdb();
