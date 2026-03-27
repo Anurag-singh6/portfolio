@@ -64,7 +64,7 @@ const ContactMe = () => {
     }
 
     try {
-      const res = await api.post("/api/contact", formData);
+      const res = await api.post("https://portfolio-backend-e5tw.onrender.com/public/contact", formData);
       toast.success(res.data.message);
       handleClearForm();
     } catch (error) {
