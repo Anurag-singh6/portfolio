@@ -64,7 +64,7 @@ const ContactMe = () => {
     }
 
     try {
-      const res = await api.post("/public/contact", formData);
+      const res = await api.post("/api/contact", formData);
       toast.success(res.data.message);
       handleClearForm();
     } catch (error) {
