@@ -49,7 +49,7 @@ const Hero = () => {
           <img
             src={linked}
             alt="profile"
-            className="w-64 h-auto sm:w-72 md:w-80 lg:w-96 border-2 border-gray-300 rounded-xl object-contain shadow-2xl"
+            className="w-64 h-auto sm:w-72 md:w-80 lg:w-96 border-2 border-gray-300 rounded-2xl object-contain shadow-2xl"
             loading="lazy"
           />
         </div>
