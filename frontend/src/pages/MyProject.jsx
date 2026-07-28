@@ -13,6 +13,9 @@ const MyProject = () => {
       "_blank"
     );
   };
+  const openFood = () => {
+    window.open("https://cravenings.onrender.com", "_blank");
+  };
 
   const openGithubChat = () => {
     window.open("https://github.com/Anurag-singh6/chatapp/tree/main", "_blank");
@@ -98,6 +101,12 @@ const MyProject = () => {
                 className="mt-5 px-5 py-2 rounded-lg bg-amber-500 text-white font-semibold hover:bg-amber-600 transition"
               >
                 View Code →
+              </button>
+              <button
+                onClick={openFood}
+                className="mt-5 px-5 py-2 rounded-lg bg-blue-500 text-white font-semibold hover:bg-blue-600 transition"
+              >
+                Go To Site
               </button>
             </div>
 
