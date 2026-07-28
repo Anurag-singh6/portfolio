@@ -104,7 +104,7 @@ const MyProject = () => {
               </button>
               <button
                 onClick={openFood}
-                className="mt-5 px-5 py-2 rounded-lg bg-blue-500 text-white font-semibold hover:bg-blue-600 transition"
+                className="mt-5 ms-1 px-5 py-2 rounded-lg bg-blue-500 text-white font-semibold hover:bg-blue-600 transition"
               >
                 Go To Site
               </button>
