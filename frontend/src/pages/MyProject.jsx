@@ -62,7 +62,7 @@ const MyProject = () => {
           <div className="border-2 border-blue-300 rounded-2xl transition hover:shadow-xl flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
             <div className="p-5 sm:p-8 text-center lg:text-left">
               <h3 className="text-xl sm:text-2xl font-bold text-blue-700">
-                Food Delivery Website
+                Cravening Food Delivery Website
               </h3>
 
               <span className="text-sm font-semibold text-gray-500">
