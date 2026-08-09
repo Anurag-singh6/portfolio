@@ -180,7 +180,7 @@ const MyProject = () => {
               </button>
             </div>
 
-            <div className="w-full sm:w-10 flex justify-center pb-5 lg:pb-0">
+            <div className="lg:w-full sm:w-10 flex justify-center pb-5 lg:pb-0">
               <img
                 src={sec}
                 alt=""
