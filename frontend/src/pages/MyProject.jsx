@@ -1,5 +1,6 @@
 import React from "react";
 import rest from "../assets/rest.png";
+import sec from "../assets/sec.png";
 import chatkaro from "../assets/chatkaro.png";
 import jokeapp from "../assets/jokeapp.png";
 import converter from "../assets/coverter.png";
@@ -15,6 +16,16 @@ const MyProject = () => {
   };
   const openFood = () => {
     window.open("https://cravenings.onrender.com", "_blank");
+  };
+
+  const openGithubCloud = () => {
+    window.open(
+      "https://github.com/Anurag-singh6/Secure_Cloud_File_Storage",
+      "_blank"
+    );
+  };
+  const openCloud = () => {
+    window.open("https://secure-cloud-file-storage.onrender.com/", "_blank");
   };
 
   const openGithubChat = () => {
@@ -120,6 +131,65 @@ const MyProject = () => {
           </div>
 
           {/* CARD 2 */}
+          <div className="border-2 border-blue-300 rounded-2xl transition hover:shadow-xl flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
+            <div className="p-5 sm:p-8 text-center lg:text-left">
+              <h3 className="text-xl sm:text-2xl font-bold text-blue-700">
+                Secure Cloud File Storage
+              </h3>
+
+              <span className="text-sm font-semibold text-gray-500">
+                MAY 2026
+              </span>
+
+              <p className="text-gray-600 text-sm sm:text-md mt-2">
+                A robust, production-ready cloud-based file storage solution
+                built with the MERN stack. Designed with end-to-end encryption,
+                secure authentication, and advanced file management
+                capabilities.
+              </p>
+
+              <div className="mt-3 flex flex-wrap gap-2 justify-center lg:justify-start">
+                {[
+                  "React",
+                  "Node.js",
+                  "Express",
+                  "MongoDB",
+                  "JWT",
+                  "Rest API",
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 text-sm border border-blue-300 rounded-xl"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <button
+                onClick={openGithubCloud}
+                className="mt-5 px-5 py-2 rounded-lg bg-amber-500 text-white font-semibold hover:bg-amber-600 transition"
+              >
+                View Code →
+              </button>
+              <button
+                onClick={openCloud}
+                className="mt-5 ms-1 px-5 py-2 rounded-lg bg-blue-500 text-white font-semibold hover:bg-blue-600 transition"
+              >
+                Go To Site
+              </button>
+            </div>
+
+            <div className="w-full flex justify-center pb-5 lg:pb-0">
+              <img
+                src={sec}
+                alt=""
+                className="w-full sm:w-80 h-60 object-cover rounded-xl"
+              />
+            </div>
+          </div>
+
+          {/* CARD 3 */}
           <div className="border-2 border-blue-300 rounded-2xl transition hover:shadow-xl flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
             <div className="p-5 sm:p-8 text-center lg:text-left">
               <h3 className="text-xl sm:text-2xl font-bold text-blue-700">
