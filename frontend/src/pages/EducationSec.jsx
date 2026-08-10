@@ -18,11 +18,11 @@ const EducationSec = () => {
           <div className="p-5 sm:p-6 border-2 border-blue-300 rounded-xl transition hover:border-amber-400 hover:shadow-lg">
             <h5 className="text-lg font-bold">MCA (Lateral)</h5>
             <span className="text-blue-600 text-sm font-semibold">
-              2025 - Present
+              2025 - 2026
             </span>
             <p className="text-sm sm:text-md font-semibold mt-1">
               Makhanlal Chaturvedi National University of Journalism and Mass
-              Communication, Bhopal
+              Communication, Bhopal | <i>CGPA:</i> <b>7.10</b>
             </p>
           </div>
 
