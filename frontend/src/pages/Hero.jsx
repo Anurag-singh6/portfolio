@@ -37,12 +37,14 @@ const Hero = () => {
             >
               View Projects
             </button>
+
             <button
               className="text-amber-600 font-semibold w-full sm:w-auto bg-white p-3 border-2 border-amber-400 rounded-xl shadow-md hover:shadow-lg transition ease-in-out hover:bg-amber-50"
               onClick={scrollToContact}
             >
               Get In Touch
             </button>
+
             <button className="text-white font-bold w-full sm:w-auto bg-green-500 p-3 border-none rounded-xl shadow-md hover:shadow-lg transition ease-in-out hover:bg-green-700">
               My CV →
             </button>
