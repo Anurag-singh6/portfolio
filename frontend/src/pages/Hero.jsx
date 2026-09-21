@@ -46,7 +46,7 @@ const Hero = () => {
             </button>
 
             <button className="text-white font-bold w-full sm:w-auto bg-green-500 p-3 border-none rounded-xl shadow-md hover:shadow-lg transition ease-in-out hover:bg-green-700"
-            onSubmit={"https://drive.google.com/file/d/1z1axWnJBYWD0MwBROj87Az-wXvKE5_NO/view?usp=sharing"}>
+            onClick={"https://drive.google.com/file/d/1z1axWnJBYWD0MwBROj87Az-wXvKE5_NO/view?usp=sharing"}>
               My CV →
             </button>
           </div>
