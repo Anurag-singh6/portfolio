@@ -30,7 +30,7 @@ const Hero = () => {
               cutting-edge technologies and best practices.
             </p>
           </div>
-          <div className="mt-6 px-2 md:px-0 flex flex-col sm:flex-row sm:items-center sm:gap-4 gap-3">
+          <div className="mt-6 px-2 md:px-0 flex flex-col sm:flex-row sm:items-center gap-4 w-full sm:w-auto">
             <button
               className="text-white font-semibold w-full sm:w-auto bg-blue-500 p-3 rounded-xl shadow-md hover:shadow-lg transition ease-in-out hover:bg-blue-700"
               onClick={scrollToProjects}
