@@ -8,6 +8,9 @@ const Hero = () => {
   const scrollToContact = () => {
     document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
   };
+  const gotodrive = () => {
+    window.open("https://drive.google.com/file/d/1z1axWnJBYWD0MwBROj87Az-wXvKE5_NO/view?usp=sharing", "_blank");
+  }
   return (
     <>
       <section
@@ -46,7 +49,7 @@ const Hero = () => {
             </button>
 
             <button className="text-white font-bold w-full sm:w-auto bg-green-500 p-3 border-none rounded-xl shadow-md hover:shadow-lg transition ease-in-out hover:bg-green-700"
-            onClick={"https://drive.google.com/file/d/1z1axWnJBYWD0MwBROj87Az-wXvKE5_NO/view?usp=sharing"}>
+            onClick={gotodrive}>
               My CV →
             </button>
           </div>
