@@ -28,7 +28,6 @@ const Hero = () => {
               I am a Web Developer specializing in building modern web
               applications. I create efficient, scalable solutions using
               cutting-edge technologies and best practices.
-              <p className="text-gray-600 text-base md:text-lg leading-relaxed">My CV →</p>
             </p>
           </div>
           <div className="mt-6 px-2 md:px-0 flex flex-col sm:flex-row sm:items-center sm:gap-4 gap-3">
@@ -43,6 +42,9 @@ const Hero = () => {
               onClick={scrollToContact}
             >
               Get In Touch
+            </button>
+            <button className="text-white font-bold w-full sm:w-auto bg-green-500 p-3 border-none rounded-xl shadow-md hover:shadow-lg transition ease-in-out hover:bg-green-700">
+              My CV →
             </button>
           </div>
         </div>
