@@ -43,7 +43,7 @@ const Hero = () => {
             >
               Get In Touch
             </button>
-            <button className="text-blue-600 font-semibold w-full sm:w-auto bg-gray-200 p-3 border-2 border-blue-400 rounded-xl shadow-md hover:shadow-lg transition ease-in-out hover:bg-gray-50">
+            <button className="text-white font-semibold w-40 sm:w-auto bg-indigo-600 p-3 border-none rounded-xl shadow-md hover:shadow-lg transition ease-in-out hover:bg-indigo-400">
               CV
             </button>
           </div>
