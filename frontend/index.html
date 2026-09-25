@@ -48,8 +48,11 @@
     <script>
       window.addEventListener("load", function () {
         var loader = document.getElementById("loader-wrapper");
+        var root = document.getElementById("root");
+        root.style.display = "none";
         setTimeout(function () {
           loader.style.display = "none";
+          root.style.display = "initial";
         }, 3000);
       });
     </script>
